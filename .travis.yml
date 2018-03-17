@@ -7,5 +7,20 @@ php:
 # before_script:
 #   - composer install --no-interaction
 
-# script:
-#   - vendor/bin/phpunit
+script:
+  - vendor/bin/phpunit
+  - phpunit --configuration phpunit.xml
+
+
+
+# ----------------------
+#   version: 2
+
+# jobs:
+#   build:
+#     docker:
+#       - image: circleci/php:7.1.5-browsers
+#     working_directory: ~/wu2018
+#     steps:
+#       - checkout
+#       - run: php --ini
