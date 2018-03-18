@@ -9,7 +9,7 @@ php:
 
 script:
   # - vendor/bin/phpunit
-  - phpunit --configuration phpunit.xml
+  # - phpunit --configuration phpunit.xml
 
 
 
