@@ -13,9 +13,7 @@ branches:
   only:
     master
 
-# install:
-#     - composer update phpunit/phpunit    # added
-#     - composer require satooshi/php-coveralls:^1.0 --dev
+
 
 before_script:
   - composer self-update
