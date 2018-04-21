@@ -14,7 +14,7 @@
     },
     "autoload": {
       "classmap": [
-        "app/index"
+        "app"
       ]
     },
     "scripts": {
