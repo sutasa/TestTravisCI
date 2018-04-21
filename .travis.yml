@@ -26,6 +26,9 @@ script:
    - vendor/bin/phpunit
    - phpunit --configuration phpunit.xml
 
+notifications:
+email: false
+
 
 
 
