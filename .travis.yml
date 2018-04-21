@@ -35,7 +35,7 @@ install:
 deploy:
   provider : firebase
   token:
-    secure: -Of9Vn6deh7iXa8OsiJPZg
+    secure: 1/Maizr4AKZaSIyFdV38ZBIVfrev6s5kOod5wBFEur4Fo
 
 after_success:
 - firebase use --token ${FIREBASE_TOKEN} # set firebase token
