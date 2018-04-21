@@ -11,12 +11,17 @@ php:
 branches:
   only:
     master
-before_script:
-   - composer install --no-interaction
 
-script:
-   - vendor/bin/phpunit
-   - phpunit --configuration phpunit.xml
+install:
+    - composer update phpunit/phpunit    # added
+    - composer require satooshi/php-coveralls:^1.0 --dev
+    
+# before_script:
+#    - composer install --no-interaction
+
+# script:
+#    - vendor/bin/phpunit
+#    - phpunit --configuration phpunit.xml
 
 
 
