@@ -27,6 +27,7 @@ script:
    - phpunit --configuration phpunit.xml
    - npm install # install node module
    - npm run build # build project
+   - echo “Deploy!!”
 
 notifications:
 email: false
@@ -40,9 +41,10 @@ deploy:
     secure: 1/Maizr4AKZaSIyFdV38ZBIVfrev6s5kOod5wBFEur4Fo
 
 after_success:
-- firebase use --token ${FIREBASE_TOKEN} # set firebase token
-- firebase use --add ${PROJECT_ID} # set current project
-- firebase deploy --non-interactive --token "${FIREBASE_TOKEN}" # deploy project
+  - firebase deploy — project projectId — token $FIREBASE_TOKEN.
+  - firebase use --token ${FIREBASE_TOKEN} # set firebase token
+  - firebase use --add ${PROJECT_ID} # set current project
+  #- firebase deploy --non-interactive --token "${FIREBASE_TOKEN}" # deploy project
 
 
 
