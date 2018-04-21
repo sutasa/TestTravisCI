@@ -42,8 +42,8 @@ class AI
      */
     public static function getSentiment($text)
     {
-        $pt = array("ดีใจ","มีความสุข","สุขใจ");
-        $nt = array("เสียใจ","ไม่มีความสุข","ทุกข์ใจ");
+        $pt = array("ดีใจ","มีความสุข","สุขใจ",'ดี');
+        $nt = array("เสียใจ","ไม่มีความสุข","ทุกข์ใจ",'แย่');
        
         for($i=0;$i<sizeof($pt);$i++){
             
