@@ -12,16 +12,16 @@ branches:
   only:
     master
 
-install:
-    - composer update phpunit/phpunit    # added
-    - composer require satooshi/php-coveralls:^1.0 --dev
-    
+# install:
+#     - composer update phpunit/phpunit    # added
+#     - composer require satooshi/php-coveralls:^1.0 --dev
+
 # before_script:
 #    - composer install --no-interaction
 
-# script:
-#    - vendor/bin/phpunit
-#    - phpunit --configuration phpunit.xml
+script:
+   - vendor/bin/phpunit
+   - phpunit --configuration phpunit.xml
 
 
 
