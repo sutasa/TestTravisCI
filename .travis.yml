@@ -55,7 +55,7 @@ after_success:
 # before_script:
 #   - composer install --no-interaction
 
-script:
+#script:
   # - vendor/bin/phpunit
   # - phpunit --configuration phpunit.xml
 
